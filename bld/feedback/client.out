@@ -1,0 +1,8242 @@
+Use Case 1
+--------------------------------------------------------
+tsapp -c localhost 5000
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::5
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 0
+
+Hop is at main server ::129.21.37.36	 The processing delay is::30
+The RTT for client is:: 88
+
+Use Case 2
+--------------------------------------------------------
+tsapp -c localhost -T 99 --user usr --pass pw -t 5001
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::2
+clientIP::129.21.37.36
+msg::Request to change time
+clientPort::4000
+userName::usr
+password::pw
+time::99
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RESET SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 0
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+The RTT for Client is:: 113
+
+tsapp -c localhost 5000
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 0
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+The RTT for client is:: 49
+
+Use Case 3
+--------------------------------------------------------
+tsapp -c localhost -n 10 -u 4000
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::35
+The RTT for client is:: 103
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+tsapp -c localhost -n 10 -t 4001
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for Client is:: 76
+
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for Client is:: 6
+
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for Client is:: 5
+
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for Client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for Client is:: 5
+
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for Client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for Client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for Client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for Client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST SENT IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+Time in calender format 1969 12 31 19:00:00
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for Client is:: 3
+
+Use Case 4
+--------------------------------------------------------
+tsapp -c localhost -z -u 4000
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in UTC:: 99
+The hop count is:: 2
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::38
+
+The RTT for client is:: 42
+
+Use Case 5
+--------------------------------------------------------
+tsapp -c localhost -u 3000
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::41
+The RTT for client is:: 103
+
+tsapp -c localhost -n 250 -u 3000
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 55
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::4
+The RTT for client is:: 5
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::5
+The RTT for client is:: 6
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::5
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::5
+The RTT for client is:: 6
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::6
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::6
+The RTT for client is:: 8
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::3
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::4
+The RTT for client is:: 5
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::5
+The RTT for client is:: 5
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::4
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::4
+The RTT for client is:: 5
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::5
+The RTT for client is:: 8
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::15
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::15
+The RTT for client is:: 17
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::16
+The RTT for client is:: 17
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 14
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 6
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::8
+The RTT for client is:: 9
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 5
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::4
+The RTT for client is:: 5
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::9
+The RTT for client is:: 10
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::4
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::4
+The RTT for client is:: 5
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::3
+The RTT for client is:: 4
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+The RTT for client is:: 0
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+The RTT for client is:: 0
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::2
+The RTT for client is:: 3
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 2
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::1
+The RTT for client is:: 1
+
+SENDING CLIENT REQUEST
+THE REQUEST IS
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+CLIENT WAITING FOR RESPONSE
+
+RESPONSE OBTAINED FROM SERVER
+THE RESPONSE PACKET IS::
+msgId::3
+clientIP::129.21.37.36
+msg::03 TIME RETRIEVE SUCCESS
+clientPort::4000
+userName::null
+password::null
+time::99
+
+Time in calender format 1969 12 31 19:00:00
+The hop count is:: 4
+
+Hop is at main server ::129.21.37.36	 The processing delay is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+Hop is at proxy IP::129.21.37.36	 The RTT for it is::0
+The RTT for client is:: 1
+

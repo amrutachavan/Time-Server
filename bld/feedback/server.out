@@ -1,0 +1,3916 @@
+Use Case 1
+--------------------------------------------------------
+tsapp -s -T 5 5000 5001
+UDP SERVER STARTING ON PORT::5000
+TCP SERVER STARTING ON PORT::5001
+
+THE IP OF MAIN SERVER IS::129.21.37.36
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+Use Case 2-5
+--------------------------------------------------------
+tsapp -s -T 5 --user usr --pass pw 5000 5001
+UDP SERVER STARTING ON PORT::5000
+TCP SERVER STARTING ON PORT::5001
+
+THE IP OF MAIN SERVER IS::129.21.37.36
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::2
+clientIP::129.21.37.36
+msg::Request to change time
+clientPort::4000
+userName::usr
+password::pw
+time::99
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
+REQUEST RECEIVED BY SERVER
+THE REQUEST RECEIVED IS ::
+msgId::1
+clientIP::129.21.37.36
+msg::Request to get time
+clientPort::4000
+userName::null
+password::null
+time::0
+
+SERVER IS REPLYING
+
+
